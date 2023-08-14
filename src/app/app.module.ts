@@ -16,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     FuncionariosComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    FuncionarioFormComponent
   ],
   imports: [
     BrowserModule,
@@ -29,4 +30,5 @@ import { ReactiveFormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }import { FormsModule } from '@angular/forms';
+import { FuncionarioFormComponent } from './component/funcionario-form/funcionario-form.component';
 
