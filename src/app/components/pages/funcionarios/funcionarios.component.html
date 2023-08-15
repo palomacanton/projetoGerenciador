@@ -1,2 +1,2 @@
 <h2>Edite e Adicione funcionários</h2>
-<app-funcionario-form [btnText]="btnText"></app-funcionario-form>
+<app-funcionario-form [btnText]="btnText" (onSubmit)="createHandler($event)"></app-funcionario-form>

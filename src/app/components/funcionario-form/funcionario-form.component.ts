@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -30,7 +30,17 @@ export class FuncionarioFormComponent {
     return this.funcionarioForm.get('departament')!;
   }
 
+  onFileSelected(event: any){
+
+    const file: File = event.target.files[0];
+    this.funcionarioForm.patchValue({image : file});
+
+  }
+
   submit(){
-    console.log('Enviou o formulário');
+    if (this.funcionarioForm.invalid){
+      return;
+    }
+    console.log(this.funcionarioForm.value);
   }
 }

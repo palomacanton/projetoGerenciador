@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class FuncionariosComponent {
   btnText = 'Confirmar';
+
+  async createHandler(event: any){
+    console.log('Enviou!');
+  }
 }

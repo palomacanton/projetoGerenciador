@@ -54,3 +54,10 @@ input[type="submit"]:hover{
   border-color: #087EBB;
   background-color: transparent;
 }
+
+.validation-error p{
+  color: crimson;
+  margin-top: .4em;
+  border-left: 3px solid crimson;
+  padding-left: 0.2em;
+}
