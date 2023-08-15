@@ -5,7 +5,7 @@ import { FuncionariosComponent } from './components/pages/funcionarios/funcionar
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'funcionarios', component: FuncionariosComponent}
+  {path:'funcionarios/:id', component: FuncionariosComponent}
 ];
 
 @NgModule({
