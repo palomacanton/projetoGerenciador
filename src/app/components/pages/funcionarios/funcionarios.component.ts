@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./funcionarios.component.css']
 })
 export class FuncionariosComponent {
-
+  btnText = 'Confirmar';
 }

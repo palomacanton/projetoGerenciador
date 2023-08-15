@@ -15,3 +15,42 @@ a{
 a:hover{
   color: #087EBB;
 }
+
+/* FORM */
+form{
+  width: 450px;
+  margin: 0 auto;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.form-group label{
+  font-weight: bold;
+  font-size: .9em;
+  margin-bottom: .4em;
+}
+
+.form-group input{
+  padding: .6em;
+  color: #777;
+  font-size: .8em;
+}
+
+input[type="submit"]{
+  background-color: #efefef;
+  border: 2px solid transparent;
+  padding: .6em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: .4s;
+}
+
+input[type="submit"]:hover{
+  color: #087EBB;
+  border-color: #087EBB;
+  background-color: transparent;
+}
